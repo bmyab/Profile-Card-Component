@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--Darkcyan);
+  background-image: url('../assets/images/bg-pattern-top.svg'), url('../assets/images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+.card{
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgb(0 0 0 / 32%);
+}
+.card .card__image{
+  background-image: url('../assets/images/bg-pattern-card.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 14rem;
+}
+.card .card__image img{
+  position: relative;
+  top: 62%;
+  border-radius: 50%;
+  border: 0.5rem solid white;
+}
+.card .card__content h1{
+  font-size: 1.8rem;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 1rem;
+  margin-top:2rem;
+}
+.card .card__content span{
+  color: var(--Dark-gray);
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.card .card__stats{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  color: var(--Dark-grayish-blue);
+  border-top: 1px solid #ddd;
+}
+.card .card__stats .stat{
+  padding-block-start: 2rem;
+}
+.card .card__stats .stat h2{
+  font-size: 1.8rem ;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 0.2rem;
+}
+.card .card__stats .stat span{
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
